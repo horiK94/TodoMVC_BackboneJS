@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" src="text/css" href="./css/index.css">
+    <link rel="stylesheet" src="text/css" href="./public/css/index.css">
 </head>
 <body>
     <div id="content">
         <h1 id="title">Todos</h1>
         <div id="input-screen">
+            <input type="checkbox" name="all" id="all">
             <form method="post" onsubmit="return false" id="todo-post">
-                <input type="checkbox" name="all" id="all">
                 <input type="text" name="todo" id="todo-input" placeholder="What needs to be done?">
             </form>
         </div>
@@ -30,10 +30,12 @@
             </form>
         </div>
     </div>
-
     <script src="./lib/underscore/underscore.js"></script>
     <script src="./lib/jquery/jquery.js"></script>
     <script src="./lib/backbone/backbone.js"></script>
-    <script type="text/javascript" src="./js/View/TodoInput.js"></script>
+    <script type="text/javascript" src="./public/script/app/View/TodoView.js"></script>
+    <script type="text/javascript">
+        new ParentView()
+    </script>
 </body>
 </html>
