@@ -1,0 +1,30 @@
+#content {
+    text-align: center;
+    background-color: #e0e0e0;
+    min-height: 100vh;
+    height: auto;
+}
+
+#input-screen form{
+    display: inline-block;
+}
+
+#title {
+    font-weight: lighter;
+    color: #c79f9f;
+}
+
+#todo-list {
+    margin: auto;
+}
+
+.text {
+    font-size: 20px;
+}
+
+body #content #input-screen form #todo-input {
+    height: 60px;
+    width: 540px;
+    font-size: 22px;
+    font-weight: lighter;
+}

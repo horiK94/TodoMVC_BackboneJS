@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" src="text/css" href="./css/index.css">
+</head>
+<body>
+    <div id="content">
+        <h1 id="title">Todos</h1>
+        <div id="input-screen">
+            <form method="post" onsubmit="return false" id="todo-post">
+                <input type="checkbox" name="all" id="all">
+                <input type="text" name="todo" id="todo-input" placeholder="What needs to be done?">
+            </form>
+        </div>
+        <div id="todo-list">
+
+        </div>
+        <div id="footer">
+            <div id="left-item">
+                0 items left
+            </div>
+            <form action="post" onsubmit="return false" id="todo-type">
+                <input type="radio" name="showType" value="All" checked>All
+                <input type="radio" name="showType" value="Active">Active
+                <input type="radio" name="showType" value="Completed">Completed
+            </form>
+        </div>
+    </div>
+
+    <script src="./lib/underscore/underscore.js"></script>
+    <script src="./lib/jquery/jquery.js"></script>
+    <script src="./lib/backbone/backbone.js"></script>
+    <script type="text/javascript" src="./js/View/TodoInput.js"></script>
+</body>
+</html>
